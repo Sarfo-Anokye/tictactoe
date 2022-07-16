@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Tic Tac Toe</title>
+</head>
+<body>
+<!-- NEW GAME MENU -->
+  <div class="new-game-container ">
+    <div class="mark-group">
+      <img id="x-logo" src="./assets/icon-x.svg" alt="">
+      <img id="o-logo" src="./assets/icon-o.svg" alt="">
+
+
+    </div>
+    <div class="choose-mark-group">
+      <p id="pick">Pick player 1's mark</p>
+      <div class="choose-mark-button">
+        <button class="choose-mark-x-button"><img src="./assets/icon-x-outline.svg" alt=""></button>
+        <button class="choose-mark-o-button"><img src="./assets/icon-o-outline.svg" alt=""></button>
+      </div>
+      <p id="remem">Remember: X goes first</p>
+
+      
+
+    </div>
+    <div class="new-game-button-group">
+      <button class="new-game-vs-cpu-button new-game-button" onclick="toggleVsComputer()">New Game (vs CPU)</button>
+      <button class="new-game-vs-player-button new-game-button" onclick="toggleMultiplayer()" > New Game (vs player)</button>
+
+    </div>
+
+
+
+
+  </div>
+
+  
+  <!-- END OF NEW GAME MENU -->
+
+
+<!-- GAME START CONTAINER -->
+  <div class="game-start-container">
+    <div class="game-start-nav-bar">
+        <div class="game-start-mark-group">
+            <img id="x-logo" src="./assets/icon-x.svg" alt="">
+            <img id="o-logo" src="./assets/icon-o.svg" alt="">
+        </div>
+        <div class="game-start-mark-turn">
+            <img id="turn"src="./assets/icon-x-outline.svg" alt=""><span>TURN</span>
+        </div>
+        <div class="game-start-reset-button">
+          <img id="game-start-restart-img" src="./assets/icon-restart.svg"  alt="">
+        </div>
+    </div>
+    <div class="game-start-grid-container">
+      <div class="top-grid grid">
+        <div class="grid-1 gr"><img class="mark-image" src="" alt=""></div>
+        <div class="grid-2 gr"><img class="mark-image" src="" alt=""></div>
+        <div class="grid-3 gr"><img class="mark-image" src="" alt=""></div>
+      </div>
+
+      <div class="middle-grid grid">
+        <div class="grid-4 gr"><img class="mark-image" src="" ></div>
+        <div class="grid-5 gr"><img class="mark-image" src="" alt=""></div>
+        <div class="grid-6 gr"><img class="mark-image" src="" alt=""></div>
+      </div>
+
+      <div class="last-grid grid">
+        <div class="grid-7 gr"><img class="mark-image" src="" alt=""></div>
+        <div class="grid-8 gr"><img class="mark-image" src="" alt=""></div>
+        <div class="grid-9 gr"><img class="mark-image" src="" alt=""></div>
+      </div>
+     
+    </div>
+
+    <div class="game-start-stats">
+      <div class="user-stat stat"> <p id="user-stat-text"> X (You)</p><span id="user-stat-counter" >0</span></div>
+      <div class="ties-stat stat"> <p id="tie">TIES</p><span id="ties-stat-counter" >0</span></div>
+      <div class="cpu-stat stat"> <p id="cpu-stat-text"> O (CPU)</p><span id="cpu-stat-counter" >0</span></div>
+
+    </div>
+
+  </div>
+
+  <div class="message hide ">
+    <p></p>
+    <div id="first-div">
+      <img id="won-img" src="" alt="">
+      <h4></h4>
+    </div>
+    <div id="second-div">
+      <button id="quit-btn" onclick="quitGame()">QUIT</button>
+    <button id="next-round-btn" onclick="nextRound()">NEXT ROUND</button>
+    </div>
+    
+  </div>
+
+  
+
+  
+ <script src="./apps.js"></script>
+</body>
+</html>
