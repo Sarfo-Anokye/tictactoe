@@ -406,6 +406,9 @@ box-shadow: inset 0px -4px 0px #6B8997;
 box-shadow: inset 0px -4px 0px #CC8B13;
      
 }
+.game-start-grid-container .gr:hover{
+    cursor: pointer;
+}
 
 
 /* MOBILE RESPONSIVENESS */
