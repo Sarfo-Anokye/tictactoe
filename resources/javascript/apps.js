@@ -17,8 +17,7 @@ let computerWins=0;
 let ties=0;
 const xhover="./assets/icon-x-outline.svg";
 const ohover="./assets/icon-o-outline.svg";
-let xwin=flase;
-let owin=false;    
+
 
 
 // const gIt=localStorage.getItem('Ustat');
@@ -138,9 +137,8 @@ function offHoverEffect(e){
 function checkWinvsComputer(){
     if(gridboxes[0].firstChild.getAttribute('src')==xImage && gridboxes[1].firstChild.getAttribute('src')==xImage && gridboxes[2].firstChild.getAttribute('src')==xImage){
      console.log('X Wins');
-     xwin=true;
-     userWins=userWins+1
-     userStat.innerHTML=userWins
+     userWins=userWins+1;
+     userStat.innerHTML=userWins;
      document.querySelector('.message').classList.remove('hide')
      document.querySelector('.message p').innerHTML='YOU WON!';
      document.getElementById('won-img').src=xImage;
@@ -155,9 +153,8 @@ function checkWinvsComputer(){
     
   if(gridboxes[3].firstChild.getAttribute('src')==xImage && gridboxes[4].firstChild.getAttribute('src')==xImage && gridboxes[5].firstChild.getAttribute('src')==xImage){
      console.log('X Wins');
-     xwin=true;
-     userWins=userWins+1
-     userStat.innerHTML=userWins
+     userWins=userWins+1;
+     userStat.innerHTML=userWins;
      document.querySelector('.message').classList.remove('hide')
      document.querySelector('.message p').innerHTML='YOU WON!';
      document.getElementById('won-img').src=xImage;
@@ -171,10 +168,9 @@ function checkWinvsComputer(){
  
   if(gridboxes[6].firstChild.getAttribute('src')==xImage && gridboxes[7].firstChild.getAttribute('src')==xImage && gridboxes[8].firstChild.getAttribute('src')==xImage){
      console.log('X Wins');
-     xwin=true;
-     userWins=userWins+1
-     userStat.innerHTML=userWins
-     document.querySelector('.message').classList.remove('hide')
+     userWins=userWins+1;;
+     userStat.innerHTML=userWins;
+     document.querySelector('.message').classList.remove('hide');
      document.querySelector('.message p').innerHTML='YOU WON!';
      document.getElementById('won-img').src=xImage;
      document.getElementById('won-img').classList.remove('hide');
@@ -187,7 +183,6 @@ function checkWinvsComputer(){
  
   if(gridboxes[0].firstChild.getAttribute('src')==xImage && gridboxes[3].firstChild.getAttribute('src')==xImage && gridboxes[6].firstChild.getAttribute('src')==xImage){
      console.log('X Wins');
-     xwin=true;
      userWins=userWins+1;
      userStat.innerHTML=userWins;
      document.querySelector('.message').classList.remove('hide');
@@ -203,7 +198,6 @@ function checkWinvsComputer(){
   }
   if(gridboxes[1].firstChild.getAttribute('src')==xImage && gridboxes[4].firstChild.getAttribute('src')==xImage && gridboxes[7].firstChild.getAttribute('src')==xImage){
      console.log('X Wins');
-     xwin=true;
      userWins=userWins+1;
      userStat.innerHTML=userWins;
      document.querySelector('.message').classList.remove('hide');
@@ -219,7 +213,6 @@ function checkWinvsComputer(){
  
   if(gridboxes[2].firstChild.getAttribute('src')==xImage && gridboxes[5].firstChild.getAttribute('src')==xImage && gridboxes[8].firstChild.getAttribute('src')==xImage){
      console.log('X Wins');
-     xwin=true;
      userWins=userWins+1;
      userStat.innerHTML=userWins;
      document.querySelector('.message').classList.remove('hide');
@@ -235,7 +228,6 @@ function checkWinvsComputer(){
  
   if(gridboxes[0].firstChild.getAttribute('src')==xImage && gridboxes[4].firstChild.getAttribute('src')==xImage && gridboxes[8].firstChild.getAttribute('src')==xImage){
      console.log('X Wins');
-     xwin=true;
      userWins=userWins+1;
      userStat.innerHTML=userWins;
      document.querySelector('.message').classList.remove('hide')
@@ -251,7 +243,6 @@ function checkWinvsComputer(){
  
   if(gridboxes[2].firstChild.getAttribute('src')==xImage && gridboxes[4].firstChild.getAttribute('src')==xImage && gridboxes[6].firstChild.getAttribute('src')==xImage){
      console.log('X Wins');
-     xwin=true;
      userWins=userWins+1;
      userStat.innerHTML=userWins;
      document.querySelector('.message').classList.remove('hide');
@@ -267,7 +258,6 @@ function checkWinvsComputer(){
  
   if(gridboxes[0].firstChild.getAttribute('src')==oImage && gridboxes[1].firstChild.getAttribute('src')==oImage && gridboxes[2].firstChild.getAttribute('src')==oImage){
      console.log('O Wins');
-     owin=true;
      computerWins=computerWins+1;
      cpuStat.innerHTML=computerWins;
      document.querySelector('.message').classList.remove('hide');
@@ -283,7 +273,6 @@ function checkWinvsComputer(){
     
   if(gridboxes[3].firstChild.getAttribute('src')==oImage && gridboxes[4].firstChild.getAttribute('src')==oImage && gridboxes[5].firstChild.getAttribute('src')==oImage){
      console.log('O Wins');
-     owin=true;
      computerWins=computerWins+1
      cpuStat.innerHTML=computerWins
      document.querySelector('.message').classList.remove('hide');
@@ -299,7 +288,6 @@ function checkWinvsComputer(){
  
   if(gridboxes[6].firstChild.getAttribute('src')==oImage && gridboxes[7].firstChild.getAttribute('src')==oImage && gridboxes[8].firstChild.getAttribute('src')==oImage){
      console.log('O Wins');
-     owin=true;
      computerWins=computerWins+1
      cpuStat.innerHTML=computerWins
      document.querySelector('.message').classList.remove('hide')
@@ -315,7 +303,6 @@ function checkWinvsComputer(){
  
   if(gridboxes[0].firstChild.getAttribute('src')==oImage && gridboxes[3].firstChild.getAttribute('src')==oImage && gridboxes[6].firstChild.getAttribute('src')==oImage){
      console.log('o Wins');
-     owin=true;
      computerWins=computerWins+1
      cpuStat.innerHTML=computerWins
      document.querySelector('.message').classList.remove('hide')
@@ -331,7 +318,6 @@ function checkWinvsComputer(){
  
   if(gridboxes[1].firstChild.getAttribute('src')==oImage && gridboxes[4].firstChild.getAttribute('src')==oImage && gridboxes[7].firstChild.getAttribute('src')==oImage){
      console.log('O Wins');
-     owin=true;
      computerWins=computerWins+1;
      cpuStat.innerHTML=computerWins;
      document.querySelector('.message').classList.remove('hide');
@@ -347,7 +333,6 @@ function checkWinvsComputer(){
  
   if(gridboxes[2].firstChild.getAttribute('src')==oImage && gridboxes[5].firstChild.getAttribute('src')==oImage && gridboxes[8].firstChild.getAttribute('src')==oImage){
      console.log('O Wins');
-     owin=true;
      computerWins=computerWins+1;
      cpuStat.innerHTML=computerWins;
      document.querySelector('.message').classList.remove('hide');
@@ -363,7 +348,6 @@ function checkWinvsComputer(){
  
   if(gridboxes[0].firstChild.getAttribute('src')==oImage && gridboxes[4].firstChild.getAttribute('src')==oImage && gridboxes[8].firstChild.getAttribute('src')==oImage){
      console.log('O Wins');
-     owin=true;
      computerWins=computerWins+1;
     cpuStat.innerHTML=computerWins;
      document.querySelector('.message').classList.remove('hide');
@@ -379,7 +363,6 @@ function checkWinvsComputer(){
  
   if(gridboxes[2].firstChild.getAttribute('src')==oImage && gridboxes[4].firstChild.getAttribute('src')==oImage && gridboxes[6].firstChild.getAttribute('src')==oImage){
      console.log('O Wins');
-     owin=true;
      computerWins=computerWins+1;
      computerWins.innerHTML=computerWins;
      document.querySelector('.message').classList.remove('hide');
@@ -781,13 +764,4 @@ function restartFucn(){
 restartGame.addEventListener('click',restartFucn)
 function hide(){
     document.querySelector('.message').classList.add('hide');
-}
-
-
-function minmax(){
-    let emptyboxes=[];
-    if(gridboxes[i].firstChild.getAttribute('src')==''){
-        emptyboxes.push([i])
-        
-    }
 }
