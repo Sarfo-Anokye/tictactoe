@@ -383,7 +383,7 @@ gridboxes[7].firstChild.getAttribute('src')!=''&& gridboxes[8].firstChild.getAtt
 
 // function for quiting game
 function quitGame(){
-    window.open('tictactoe.html','_self');
+    window.open('index.html','_self');
 }
 // NEXT ROUND FUNCTION
 function nextRound(){
