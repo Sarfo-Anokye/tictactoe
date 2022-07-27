@@ -507,6 +507,13 @@ box-shadow: inset 0px -4px 0px #CC8B13;
         line-height: 20px;
         letter-spacing: 1px;
     }
+    #ink{
+        font-family: 'Outfit';
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+
 
     .game-start-container{
         flex-basis: 330px;
@@ -551,11 +558,11 @@ box-shadow: inset 0px -4px 0px #CC8B13;
         height: 100%;
     }
 
-    .gr img{
+    /* .gr img{
         width: 40px;
         height: 40px;
     
-    }
+    } */
 
     .stat {
         border-radius: 10px;  
