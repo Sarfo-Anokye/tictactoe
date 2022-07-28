@@ -92,7 +92,7 @@ margin-bottom: 40px;;
     border:none;
 }
 .choose-mark-group button:hover{
-    background: #A8BFC9;
+    /* background: #A8BFC9; */
     cursor:pointer;
 }
 .active{
