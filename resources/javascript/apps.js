@@ -437,7 +437,7 @@ function playAgain(currentImage){
 function restartFucn(){
     document.querySelector('.message').classList.remove('hide');
     document.getElementById('won-img').classList.add('hide');
-    document.querySelector('.message P').classList.add('hide');
+    document.querySelector('.message P').innerHTML='';
     document.querySelector('.message h4').innerHTML='RESTART GAME?';
     document.querySelector('.message h4').style.color='#A8BFC9';
     document.querySelector('#quit-btn').innerHTML='NO, CANCEL'
